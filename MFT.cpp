@@ -20,10 +20,8 @@ int main(){
         cout<<"\n";
     }
 
-    //Calculate the external fragmentation
-    int external_fragmentation;
     int number_of_blocks=memory_size/block_size;
-    external_fragmentation=memory_size-number_of_blocks*block_size;
+
 
     cout<<"Total number of blocks available in the memory "<<number_of_blocks;
     cout<<"\n";
@@ -47,6 +45,6 @@ int main(){
         cout<<"\n Memory is full,remaining process cannot be accomodated\n";
     }
     cout<<"Total Internal Fragmentation is "<<total_internal_fragmentation;
-    cout<<"Total External Fragmentation is "<<external_fragmentation;
+
 
 }
